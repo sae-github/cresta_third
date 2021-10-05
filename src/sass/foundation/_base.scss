@@ -1,0 +1,29 @@
+body {
+  color: $text-color;
+  font-family: $base-font-family;
+}
+
+html {
+  @media (max-width: 375) {
+    font-size: vw(375, 16);
+  }
+
+  font-size: 16px;
+
+  @include mq(md) {
+    font-size: vw(strip-unit($inner), 16);
+  }
+
+  @media (min-width: $inner) {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}

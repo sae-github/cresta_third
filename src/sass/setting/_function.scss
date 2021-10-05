@@ -1,0 +1,25 @@
+@import '../setting/breakpoints';
+
+@function rem($pixels) {
+  @return $pixels / 16 * 1rem;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function vw($window_width, $size) {
+	@return $size / $window_width * 100vw;
+}
+
+
+@mixin mq($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}

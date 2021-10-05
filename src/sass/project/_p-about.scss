@@ -1,0 +1,24 @@
+.p-about {
+  background: url(../images/top/about-img.png) no-repeat center center / cover;
+  padding: rem(50) 0;
+  margin-top: rem(78);
+  @include mq(md) {
+    padding: rem(110) rem(56);
+  }
+
+  &__inner {
+    background-color: rgba($color: #fff, $alpha: 0.95);
+    margin: 0 rem(15);
+    padding: rem(50) rem(15) rem(50) rem(30);
+    @include mq(md) {
+      padding: rem(50) rem(30);
+      width: calc((590 / 1100 )* 100%);
+    }
+  }
+
+  &__text {
+    font-size: rem(14);
+    line-height: calc(28 / 14);
+    margin-top: rem(30);
+  }
+}

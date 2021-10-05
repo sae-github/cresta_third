@@ -1,0 +1,8 @@
+.l-inner {
+  padding-left:rem(15);
+  padding-right:rem(15);
+  @include mq(md) {
+    max-width: rem(1100);
+    margin: 0 auto;
+  }
+}

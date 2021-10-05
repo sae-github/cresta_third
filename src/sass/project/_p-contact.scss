@@ -1,0 +1,22 @@
+.p-contact {
+  &__inner {
+    @include mq(md) {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__title {
+    margin-top: rem(30);
+  }
+
+  &__wrapper {
+    @include mq(md) {
+      margin-right: rem(80);
+    }
+  }
+  &__text {
+    line-height: calc(32 / 16);
+  }
+}

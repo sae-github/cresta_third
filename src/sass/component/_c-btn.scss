@@ -1,0 +1,21 @@
+.c-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: $english-font-family;
+  font-size: rem(11);
+  letter-spacing: calc(15em / 1000);
+  padding: rem(10);
+  width: rem(160);
+  max-width: 100%;
+  transition: .3s;
+  border: rem(1) solid transparent;
+
+  &:hover {
+    transition: .3s;
+    background-color: #fff;
+    color: #000;
+    border: rem(1) solid #000;
+  }
+}

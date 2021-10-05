@@ -1,0 +1,11 @@
+.l-footer {
+  background-color: #525252;
+  font-family: $english-font-family;
+  font-size: rem(10);
+  letter-spacing: calc(10em / 1000);
+  padding: rem(18) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}

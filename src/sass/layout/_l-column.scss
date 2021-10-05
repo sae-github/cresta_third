@@ -1,0 +1,10 @@
+.l-column {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc((520 / 1100) * 100%) ;
+  }
+}
